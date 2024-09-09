@@ -1,0 +1,29 @@
+# Camera settings
+camera:
+  device_id: "manual_val/Video2.mp4"
+
+# ROI settings
+roi:
+  radius_fraction: 0.30  # Fraction of the minimum dimension
+
+# MQTT settings
+mqtt:
+  broker: 'localhost'
+  port: 1883
+  topic_weight: 'smart_scale/weight'
+  topic_data: 'smart_scale/data'
+
+# Threshold settings
+threshold:
+  weight: 10
+
+# YOLO settings
+yolo:
+  model_path: 'model/ChickenCounterV4.pt'
+  conf_threshold: 0.8
+  iou_threshold: 0.7
+  classes: [0] 
+
+# Output settings
+output:
+  directory: 'output_image'
